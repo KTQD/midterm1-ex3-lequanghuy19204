@@ -14,8 +14,8 @@ public class Main {
                 sb.append(line).append(System.lineSeparator());
                 line = br.readLine();
             }
-            String content = sb.toString();
             br.close();
+            String content = sb.toString();
             content = content.replaceAll("Nha Trang", "Vũng Tàu");
             BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"));
             bw.write(content);
